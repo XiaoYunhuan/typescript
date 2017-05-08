@@ -1,15 +1,15 @@
 /**
  * Created by DELL on 2017/5/7.
  */
-//var声明变量的怪异之处--函数作用域和全局作用域
+//var声明变量的怪异之处
 function sumMatrix(matrix) {
     var sum = 0;
     for (var i = 0; i < matrix.length; i++) {
-        console.log(`outer : ${i}`);
+        console.log("outer : " + i);
         var currentRow = matrix[i];
         for (var i = 0; i < currentRow.length; i++) {
             sum += currentRow[i];
-            console.log(`inner : ${i}`);
+            console.log("inner : " + i);
         }
     }
     return sum;
@@ -22,8 +22,6 @@ for (var i = 0; i < 10; i++) {
         setTimeout(function () { console.log(i); }, 100 * i);
     }(i));
 }
-
-//let声明 在声明变量之前不可以调用
 function foo() {
     // okay to capture 'a'
     // return a;
@@ -32,5 +30,5 @@ function foo() {
 // 不能在'a'被声明前调用'foo'
 // 运行时应该抛出错误
 foo();
-let a;
-//# sourceMappingURL=变量声明.js.map
+var a;
+//# sourceMappingURL=VariableDeclarations.js.map
