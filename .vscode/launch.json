@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
         {
             "type": "chrome",
             "request": "launch",
@@ -13,6 +14,28 @@
             "request": "attach",
             "name": "Attach to Chrome",
             "port": 9222,
+=======
+       {
+            "name": "Launch basicTypes.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/BasicTypes/basicTypes.html"
+        },
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080/BasicTypes/basicTypes.html",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "sourceMaps": true,
+>>>>>>> 7fb5542ac7d56dc1a588735bab635eafab77bf41
             "webRoot": "${workspaceRoot}"
         }
     ]
